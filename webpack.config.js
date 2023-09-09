@@ -24,12 +24,31 @@ const config = {
         loader: "babel-loader",
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-        type: "asset",
+        test: /\.html$/i,
+        use: "html-loader",
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/",
+            },
+          },
+        ],
       },
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jpg|jpeg)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "images/[name]-[hash][ext]",
+        },
       },
     ],
   },
