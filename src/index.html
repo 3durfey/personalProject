@@ -8,16 +8,16 @@
 
   <body>
     <header>
-      <button class="aboutBtn">about</button>
-      <button class="porfolioBtn">portfolio</button>
-      <button class="contactBtn">contact</button>
+      <a class="sectionButton" href="#portfolio">portfolio</a>
+      <a class="sectionButton" href="#contact">contact</a>
+      <a class="sectionButton" href="#about">about</a>
     </header>
     <div class="main">
-      <div class="about">
+      <div id="about" class="about">
         <div class="image">
           <img src="images/peter.jpeg" alt="photo of Peter Durfey" />
         </div>
-        <div class="bio">
+        <div id="bio" class="bio">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             sit amet pulvinar odio, id varius nulla. Vivamus quam nunc,
@@ -28,8 +28,60 @@
           </p>
         </div>
       </div>
-      <div class="contact"></div>
-      <div class="porfolio"></div>
+      <div id="portfolio" class="porfolio">
+        <div class="project">
+          <img
+            src="images/etchsketch.png"
+            alt="screenshot of project etch-a-sketch"
+          />
+          <div class="projectInfo">
+            justo at semper. Praesent aliquam scelerisque dui, ac feugiat purus
+            vulputate eget. Nam et lobortis quam. Vestibulum a consequat lorem.
+          </div>
+        </div>
+        <div class="project">
+          <img src="images/todo.png" alt="screenshot of project todo list" />
+          <div class="projectInfo">
+            justo at semper. Praesent aliquam scelerisque dui, ac feugiat purus
+            vulputate eget. Nam et lobortis quam. Vestibulum a consequat lorem.
+          </div>
+        </div>
+        <div class="project">
+          <img
+            src="images/tiktak.png"
+            alt="screenshot of project tic-tac-toe"
+          />
+          <div class="projectInfo">
+            justo at semper. Praesent aliquam scelerisque dui, ac feugiat purus
+            vulputate eget. Nam et lobortis quam. Vestibulum a consequat lorem.
+          </div>
+        </div>
+        <div class="project">
+          <img
+            src="images/rockpaperscissors.png"
+            alt="screenshot of project rock-paper-scissors"
+          />
+          <div class="projectInfo">
+            justo at semper. Praesent aliquam scelerisque dui, ac feugiat purus
+            vulputate eget. Nam et lobortis quam. Vestibulum a consequat lorem.
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="contact">
+        <div class="contactInfo">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            sit amet pulvinar odio, id varius nulla. Vivamus quam nunc,
+            elementum in est sed, cursus viverra eros. Proin tincidunt dignissim
+            lacus, nec imperdiet massa scelerisque et. Aliquam fringilla ac
+            justo at semper. Praesent aliquam scelerisque dui, ac feugiat purus
+            vulputate eget. Nam et lobortis quam. Vestibulum a consequat lorem.
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/peter2.jpeg" alt="photo of Peter Durfey" />
+        </div>
+      </div>
     </div>
     <footer></footer>
   </body>

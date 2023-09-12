@@ -12,14 +12,16 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-header > button {
+header > .sectionButton {
+  text-decoration: none;
+  color: black;
   background-color: white;
   border: none;
   padding: 5px;
   font-size: 25px;
   font-family: "Roboto", sans-serif;
 }
-header > button:hover {
+header > .sectionButton:hover {
   border-bottom: 5px solid black;
 }
 body {
@@ -34,9 +36,12 @@ body {
 }
 
 .about {
-  height: 600px;
+  min-height: 600px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .image {
   flex-grow: 0.5;
@@ -46,6 +51,7 @@ body {
 }
 .image > img {
   width: 300px;
+  padding: 30px;
 }
 .bio {
   flex-grow: 0.5;
@@ -59,13 +65,56 @@ body {
 }
 .contact {
   background-color: darkblue;
-  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  flex-wrap: wrap;
+}
+.contactInfo {
+  flex-grow: 1;
+  background-color: red;
+  text-align: center;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 40px;
+  margin: 40px;
 }
 .porfolio {
   background-color: grey;
-  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  padding: 20px;
+  margin: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+.project > img {
+  width: 400px;
+  height: 300px;
+  padding: 30px;
 }
 footer {
   background-color: darkgrey;
   height: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .project > img {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+  }
 }
